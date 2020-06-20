@@ -16,7 +16,7 @@
     <?php
 
     // Connexion et sélection de la base
-    $conn = mysqli_connect('db', 'user', 'test', "myDb");
+    $conn = mysqli_connect('db-lamp', 'user', 'test', "myDb");
 
 
     $query = 'SELECT * From Person';
@@ -44,3 +44,5 @@
     </div>
 </body>
 </html>
+
+<!-- 修正時刻： Sat Jun 20 12:34:38 2020 -->
