@@ -13,7 +13,8 @@ services:
         container_name: www-lamp
             
     db:
-        image: mysql:5.7
+        #image: mysql:5.7
+        image: mariadb:latest
         # ports: 
         #    - "3306:3306"
         command: --default-authentication-plugin=mysql_native_password
@@ -45,4 +46,4 @@ services:
 volumes:
     db_data:
 
-# 修正時刻： Sat Jun 20 12:18:50 2020
+# 修正時刻： Sat Jun 20 13:21:12 2020

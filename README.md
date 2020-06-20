@@ -12,7 +12,7 @@ PhpMyAdminにアクセスするには http://localhost:8888 で。
 
 MySqlにログインするには
 
-$ docker-compose exec db mysql -u user -p \
+$ docker-compose exec db mysql -u root -p \
 password: test
 
 
