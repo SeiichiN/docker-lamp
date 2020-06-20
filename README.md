@@ -1,5 +1,23 @@
 # docker-lamp
 
+jcavat氏のdocker-lampをforkして作成。
+
+Dockerで作成したLAMPP環境 -- Apache, MySQL 5.7, PhpMyAdmin and PHP
+
+$ docker-compose up -d
+
+Webブラウザで http://localhost:8000 にアクセスするとサンプルページが見れる。
+
+PhpMyAdminにアクセスするには http://localhost:8888 で。
+
+MySqlにログインするには
+
+$ docker-compose exec db mysql -u user -p
+password: test
+
+
+以下は原著者のREADME
+----
 Docker example with Apache, MySql 8.0, PhpMyAdmin and Php
 
 - You can use MariaDB 10.1 if you checkout to the tag `mariadb-10.1` - contribution made by [luca-vercelli](https://github.com/luca-vercelli)
@@ -19,3 +37,5 @@ Run mysql client:
 - `docker-compose exec db mysql -u root -p` 
 
 Enjoy !
+
+修正時刻： Sat Jun 20 13:11:23 2020
